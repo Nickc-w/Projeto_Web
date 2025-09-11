@@ -1,37 +1,28 @@
 
-
-.corpo{
-    display: inline-block; 
-    background-color: rgb(248, 249, 245);
+.container{ /* containers */
+    background-color: rgb(222, 235, 223);
     width: 50%; /* Fica mais responsivo com % do que com px */
     height: 200px;
-    margin: 20px; /* Espaço entre os containers   */
-
+    margin: 20px; /* Espaço entre os containers  */
     /* borda redonda e com sombra */
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
-
-    padding: 10px; /*  Espaço dentro do container */
+    padding: 10px; 
 }
 
-.corpo:hover {
+.Maiorcontainer{ /* containers */
+    height: 500px;
+}
+
+.container:hover,.Maiorcontainer:hover {
     transform: scale(1.05); /* aumenta o container quando passa o mouse */
 }
 
-body {   /* Não renderizei ainda, ideias de imagem do fundo (pode adicionar outra): escolher UMA  */
-  
-    /*background-image: url('imagens/img_1.jpg');*/
-    /*background-image: url('imagens/img_2.jpg');*/
-    background-image: url('imagens/img_3.jpg');
-    /*background-image: url('imagens/img_4.jpg');*/
-    /*background-image: url('imagens/img_5.jpg');*/
-    /*background-image: url('imagens/img_6.jpg');*/
-    /*background-image: url('imagens/img_7.jpg');*/
-    /*background-image: url('imagens/img_8.jpg');*/
-    /*background-image: url('imagens/img_9.jpg');*/
-    /*background-image: url('imagens/img_10.jpg');*/
-    /*background-image: url('imagens/img_11.jpg');*/
-    /*background-image: url('imagens/img_12.jpg');*/
+body {   /* Não renderizei ainda */
+
+   
+    background-image: url('imagens/img.jpg');
+   
    
    /* img cobre a tela toda, fixada no fundo, centro, sem repetição  */
     background-size: cover;
@@ -47,39 +38,40 @@ body {   /* Não renderizei ainda, ideias de imagem do fundo (pode adicionar out
 
 
 
-.TituloSubtitulo {
+.TituloSubtitulo { /* Container do Titulo+subtitulo  */
     border-bottom-left-radius: 20px;  /* Canto inferior esquerdo */
     border-bottom-right-radius: 20px; /* Canto inferior direito */
     text-align: center;
-    padding: 10px;
-    background-color: rgb(251, 252, 249);
+    background-color: rgb(222, 235, 223);
     color: rgb(14, 12, 12);
     width: 100%; 
+    padding: 10px;
+    box-sizing: border-box; /*faz com que padding fique dentro da largura tota, sem ele ultrapassa (aparece um scroll horizonta) */
     height: 150px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .Perguntas{
-    font-size: 20px;
+    margin-left: 50px;
+    font-size: 25px;
     font-weight: bold;
 
 }
 
 .Respostas {
-
-    font-size: 16px;
-    margin-bottom: 100px;
-    align-items: center;
-    
-   
+    margin-top: 10px;
+    font-size: 20px;
 }
-
 
 
 
 .Briefing{
-    text-align: center;
+  display: flex; /* Por padrao, eixo principal é horizontal */
+  align-items: center; /* Controla o eixo vertical */
+  flex-direction: column;  /* Eixo principal passa a ser vertical */
 }
+
+
 
 .botaoSaidaB{
 
@@ -95,4 +87,7 @@ body {   /* Não renderizei ainda, ideias de imagem do fundo (pode adicionar out
     text-align: center; /* centraliza o inline block no container */
 
 }
+
+
+
 
