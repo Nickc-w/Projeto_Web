@@ -76,15 +76,17 @@ body {   /* Não renderizei ainda */
 .botaoSaidaB{
 
     display: inline-block; /* ocupa o espaço necessário*/
-    background-color:white;
+    background-color:rgb(108, 170, 113);
     color: rgb(16, 14, 14);
     padding: 15px;
     border-radius: 10px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .botaoSaidaBContainer{
-    text-align: center; /* centraliza o inline block no container */
+    text-align: center; /* centraliza o inline block no container (só funciona com elementos inline*/
+
 
 }
 
