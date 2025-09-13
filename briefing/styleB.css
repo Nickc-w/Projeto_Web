@@ -21,7 +21,7 @@
 body {   /* Não renderizei ainda */
 
    
-    background-image: url('imagens/img.jpg');
+    background-image: url('imagens/img_fundo.jpg');
    
    
    /* img cobre a tela toda, fixada no fundo, centro, sem repetição  */
@@ -41,15 +41,27 @@ body {   /* Não renderizei ainda */
 .TituloSubtitulo { /* Container do Titulo+subtitulo  */
     border-bottom-left-radius: 20px;  /* Canto inferior esquerdo */
     border-bottom-right-radius: 20px; /* Canto inferior direito */
+    flex-direction: column;
     text-align: center;
     background-color: rgb(222, 235, 223);
     color: rgb(14, 12, 12);
+    padding: 1px;
     width: 100%; 
-    padding: 10px;
     box-sizing: border-box; /*faz com que padding fique dentro da largura tota, sem ele ultrapassa (aparece um scroll horizonta) */
     height: 150px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.returndiv{
+    background-color: rgb(222, 235, 223);
+}
+
+.return{
+    float: left;  /* coloca o return no canto esquerdo da sua div  */
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 
 .Perguntas{
     margin-left: 50px;
