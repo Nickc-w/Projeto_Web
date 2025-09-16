@@ -1,12 +1,17 @@
 .navbar-brand{
    /* min-height: 100px; /* Força o navbar a ter pelo menos 100px de altura */
-   padding-top: 50px;
+   padding-top: 10px;
+   padding-right: 100px;
+   padding-left:10px;
 }
 
-.nav-link.active,.nav-link.dropdown-toggle{
+/* mais especifidade = bootstrap nao bloqueia */
+.navbar-nav .nav-link.active,.nav-link.dropdown-toggle{
     font-size: 20px;
+    color: white;
 }
 
 .suportIcon{
-   padding-bottom: 5px;
+   padding-right: 10px;
 }
+

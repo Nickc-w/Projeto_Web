@@ -13,22 +13,22 @@
     <!-- ../  instrui o navegador a voltar para a pasta "pai", que nesse caso é a pasta projeto. -->
    
     
-
-  <!-- Menu do BOOTSTRAP, mudei algumas coisas -->
-  <nav class="navbar navbar-expand-lg bg-success">
+<nav class="navbar navbar-expand-lg bg-success">
   <div class="container-fluid">
-    <a class="navbar-brand" href="indexH.html"><b>Hard Auto peças</b></a>
+    <a class="navbar-brand" href="../home_page/indexH.html">
+      <img src="../home_page/Imagens/logo.png" alt="Logo" width="80" height="50">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li id="topo" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="../home_page/indexH.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Home Page
           </a>
         <ul class="dropdown-menu">
-          <!-- Quando clicar ir para partes diferentes do site -->
+            <li><a class="dropdown-item" href="#topo">Home Page (Topo)</a></li> 
             <li><a class="dropdown-item" href="#">1 parte</a></li> 
             <li><a class="dropdown-item" href="#">2 parte</a></li>
             <li><a class="dropdown-item" href="#">3 parte</a></li>
@@ -56,16 +56,16 @@
         </ul>
 
       </ul>
-      <div class="d-flex flex-column align-items-end"> <!--empilha os elementos verticalmente, alinha tudo à direita (search bar e icone de ajuda)-->
+     
 
-      <a class= "suportIcon" href="#"> <!-- Quando clicar ir para o RODAPÉ com as info de contato -->
+      <a class= "suportIcon" href="#"> 
         <img src="../home_page/Imagens/support.png" alt="Suporte" width="30" height="30">
       </a>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-light" type="submit">Search</button>
       </form>
-      </div>
+      
      
 
     </div>
