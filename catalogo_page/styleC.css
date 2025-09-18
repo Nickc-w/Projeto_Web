@@ -1,24 +1,43 @@
+
+
+
+
+/* PARA O MENU!!!!!! */ 
 body {
     padding-top: 100px; /* por causa do menu grudado no topo (ele esconde o conteudo atras dele),
                          então precisa empurrar o conteudo para baixo dele! Quanto maior o espaço, mas para baixo o conteudo vai */
 }
 
-
-
-
 .navbar-brand{
    /* min-height: 100px; /* Força o navbar a ter pelo menos 100px de altura */
    padding-top: 10px;
-   padding-right: 100px;
+   padding-right: 230px;
    padding-left:10px;
 }
 
 /* mais especifidade = bootstrap nao bloqueia */
+/* Itens do menu:  */
 .navbar-nav .nav-link.active,.nav-link.dropdown-toggle{
     font-size: 20px;
-    color: white;
+    color: white !important ; /* important: Para superar o bootstrap*/
+    font-family: 'Times New Roman', Times, serif;
 }
+
+
+.navbar-nav .nav-link.active:hover,.nav-link.dropdown-toggle:hover{ /* Quando passar o mouse, ir para verde */
+   color: rgb(158, 224, 158) !important; /* important: Para superar o bootstrap*/
+}
+
+
+.navbar-nav {
+  gap: 50px;  /* Espaço entre cada item do menu */ 
+}
+
 
 .suportIcon{
    padding-right: 10px;
 }
+
+
+
+

@@ -4,8 +4,6 @@ body {
 }
 
 
-
-
 .navbar-brand{
    /* min-height: 100px; /* Força o navbar a ter pelo menos 100px de altura */
    padding-top: 10px;
@@ -31,7 +29,7 @@ body {
   gap: 50px;  /* Espaço entre cada item do menu */ 
 }
 
-
 .suportIcon{
    padding-right: 10px;
 }
+
