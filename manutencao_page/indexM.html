@@ -121,13 +121,53 @@
 </div>
 
    <!-- forms sobre o carro -->
+<div class="car-info-container">
+  <h2>Informações sobre o seu carro</h2>
 
+  <form>
+    <div class="form-group">
+      <label for="marca">Marca:</label>
+      <select id="marca" name="marca">
+        <option value="">Selecione</option>
+        <option value="toyota">Toyota</option>
+        <option value="honda">Honda</option>
+        <option value="chevrolet">Chevrolet</option>
+        <option value="volkswagen">Volkswagen</option>
+      </select>
+    </div>
 
+    <div class="form-group">
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" placeholder="Ex: Corolla 2020">
+    </div>
 
+    <div class="form-group">
+      <label for="tipoServico">Tipo de serviço:</label>
+      <select id="tipoServico" name="tipoServico">
+        <option value="">Selecione</option>
+        <option value="revisao">Revisão</option>
+        <option value="oleo">Troca de Óleo</option>
+        <option value="freios">Freios</option>
+        <option value="alinhamento">Alinhamento e Balanceamento</option>
+      </select>
+    </div>
 
+    <div class="form-group">
+      <label for="observacoes">Observações:</label>
+      <textarea id="observacoes" name="observacoes" rows="3" placeholder="Escreva observações adicionais"></textarea>
+    </div>
 
-
-
+    <div class="form-group">
+      <label for="filial">Filial (Local):</label>
+      <select id="filial" name="filial">
+        <option value="">Selecione</option>
+        <option value="centro">Centro</option>
+        <option value="zona-norte">Zona Norte</option>
+        <option value="zona-sul">Zona Sul</option>
+      </select>
+    </div>
+  </form>
+</div>
     
 </body>
 </html>
