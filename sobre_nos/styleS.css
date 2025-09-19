@@ -3,9 +3,9 @@ body {
                          então precisa empurrar o conteudo para baixo dele! Quanto maior o espaço, mas para baixo o conteudo vai */
 }
 
+/* PARA O MENU  */
 
 .navbar-brand{
-   /* min-height: 100px; /* Força o navbar a ter pelo menos 100px de altura */
    padding-top: 10px;
    padding-right: 230px;
    padding-left:10px;

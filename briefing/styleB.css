@@ -6,7 +6,6 @@ body {
 }
 
 .navbar-brand{
-   /* min-height: 100px; /* Força o navbar a ter pelo menos 100px de altura */
    padding-top: 10px;
    padding-right: 230px;
    padding-left:10px;
@@ -94,10 +93,7 @@ body {
   scroll-margin-top: 5rem;  /* Para rolar ate o inicio 100% , menu fixado atrapalha */
 }
 
-body{
-    background: linear-gradient(to bottom,#198754, #f0cc5f); /* Mudar de cor ao longo da rolagem da pagina */
-}
-  
+
 
 
 

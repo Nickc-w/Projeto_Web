@@ -14,7 +14,8 @@
 
 
 <!-- OBJETIVO: MENU (LOGO, NOMES, SUPORTE) -->
-<nav class="navbar navbar-expand-lg bg-success fixed-top">  <!-- fixed top para deixar o menu grudado no topo -->
+
+<nav class="navbar navbar-expand-lg bg-success ">  <!-- Nao deixei menu grudado no topo nessa página -->
   <div class="container-fluid">
     <a class="navbar-brand" href="../home_page/indexH.html"> <!-- Quando clicar na logo: volta para o Home page -->
       <img src="../home_page/Imagens/logo.png" alt="Logo" width="80" height="50">
@@ -67,8 +68,8 @@
 
         <!-- search bar -->
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-light" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="Search"/>
+        <button class="btn btn-light" type="submit">Procurar</button>
       </form>
      
 
@@ -81,18 +82,49 @@
 
 
 
-<div>
+
+
+<!-- RESTO DA PÁGINA -->
+  <!-- OBJETIVO: FORMULÁRIO -->
+
+<h1>Agende sua manutenção!</h1>
+
+
+  <!-- forms sobre a pessoa -->
+<div class="DivFormsManut">
   <form>
 
 
+    <h3>Informações sobre você </h3>
+    <hr>
 
+    <!-- Usando "label" para tecnologias de acessibilidade -->
+    <!-- Usando o span para mudar somente a cor do asterisco -->
+    <!-- Required: obrigatorio -->
+    
+    <label for="id_nome">Nome:<span class="obrigatorio">*</span></label><br>
+    <input type="text" name="inputNome" id="id_nome" class="inputForms" required><br>
+    
+    <label for="id_email">E-mail:</label><br>
+    <input type="text" name="inputEmail" id="id_email" class="inputForms"><br>
 
+    <label for="id_numero">Celular:<span class="obrigatorio">*</label><br>
+    <input type="text" name="inputNumero" id="id_numero" class="inputForms"  required><br>
 
+    <label for="id_data">Data:<span class="obrigatorio">*</label>
+    <br><input type="date" name="inputData" id="id_data" class="inputForms" required><br>
+
+    <label for="id_hora">Hora:<span class="obrigatorio">*</label>
+    <br><input type="time" name="inputHora" id="id_hora" class="inputForms" required><br>
 
   </form>
-
-
 </div>
+
+   <!-- forms sobre o carro -->
+
+
+
+
 
 
 
