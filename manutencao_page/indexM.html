@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manutenção</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styleM.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
 <!-- OBJETIVO: MENU (LOGO, NOMES, SUPORTE) -->
 
 <nav class="navbar navbar-expand-lg bg-success ">  <!-- Nao deixei menu grudado no topo nessa página -->
-  <div class="container-fluid">
+  <div class="container-fluid" id="Topo">
     <a class="navbar-brand" href="../home_page/indexH.html"> <!-- Quando clicar na logo: volta para o Home page -->
       <img src="../home_page/Imagens/logo.png" alt="Logo" width="80" height="50">
     </a>
@@ -62,7 +63,7 @@
      
 
        <!-- suporte -->
-      <a class= "suportIcon" href="#"> 
+      <a class= "suportIcon" href="#rd"> 
         <img src="../home_page/Imagens/support.png" alt="Suporte" width="30" height="30">
       </a>
 
@@ -87,13 +88,15 @@
 <!-- RESTO DA PÁGINA -->
   <!-- OBJETIVO: FORMULÁRIO -->
 
+<form method="post" action="mailto:nicolly.candida@sempreceub.com">
+
+
+
 <h1>Agende sua manutenção!</h1>
 
 
   <!-- forms sobre a pessoa -->
 <div class="DivFormsManut">
-  <form>
-
 
     <h3>Informações sobre você </h3>
     <hr>
@@ -102,32 +105,42 @@
     <!-- Usando o span para mudar somente a cor do asterisco -->
     <!-- Required: obrigatorio -->
     
-    <label for="id_nome">Nome:<span class="obrigatorio">*</span></label><br>
-    <input type="text" name="inputNome" id="id_nome" class="inputForms" required><br>
+    <div class="Nome_input">
+    <label for="id_nome">Nome:<span class="obrigatorio">*</span></label>
+    <input type="text" name="inputNome" id="id_nome" class="inputForms" required>
+    </div>
     
-    <label for="id_email">E-mail:</label><br>
-    <input type="text" name="inputEmail" id="id_email" class="inputForms"><br>
+    <div class="Nome_input">
+      <label for="id_email">E-mail:</label>
+      <input type="email" name="inputEmail" id="id_email" class="inputForms">
+    </div>
 
-    <label for="id_numero">Celular:<span class="obrigatorio">*</label><br>
-    <input type="text" name="inputNumero" id="id_numero" class="inputForms"  required><br>
+    <div class="Nome_input">
+      <label for="id_numero">Celular:<span class="obrigatorio">*</span></label>
+      <input type="text" name="inputNumero" id="id_numero" class="inputForms"  required>
+    </div>
 
-    <label for="id_data">Data:<span class="obrigatorio">*</label>
-    <br><input type="date" name="inputData" id="id_data" class="inputForms" required><br>
+    <div class="Nome_input">
+      <label for="id_data">Data:<span class="obrigatorio">*</span></label>
+      <input type="date" name="inputData" id="id_data" class="inputForms" required>
+    </div>
 
-    <label for="id_hora">Hora:<span class="obrigatorio">*</label>
-    <br><input type="time" name="inputHora" id="id_hora" class="inputForms" required><br>
+    <div class="Nome_input">
+      <label for="id_hora">Hora:<span class="obrigatorio">*</span></label>
+      <input type="time" name="inputHora" id="id_hora" class="inputForms" required>
+    </div>
 
-  </form>
+
 </div>
 
    <!-- forms sobre o carro -->
 <div class="car-info-container">
-  <h2>Informações sobre o seu carro</h2>
+  <h3>Informações sobre o seu carro</h3>
+  <hr>
 
-  <form>
-    <div class="form-group">
-      <label for="marca">Marca:</label>
-      <select id="marca" name="marca">
+    <div class="Nome_input">
+      <label for="marca">Marca:<span class="obrigatorio">*</span></label>
+      <select id="marca" name="marca" class="SelectForms">
         <option value="toyota">Toyota</option>
         <option value="honda">Honda</option>
         <option value="chevrolet">Chevrolet</option>
@@ -138,17 +151,19 @@
         <option value="hyundai">Hyundai</option>
         <option value="nissan">Nissan</option>
         <option value="jeep">Jeep</option>
-      </select>
-    </div>
+      </select></div>
+   
 
-    <div class="form-group">
-      <label for="modelo">Modelo:</label>
-      <input type="text" id="modelo" name="modelo" placeholder="Ex: Corolla 2020">
-    </div>
+      <div class="Nome_input">
+        <label for="modelo">Modelo:<span class="obrigatorio">*</span></label>
+        <input type="text" id="modelo" name="modelo" placeholder="Ex: Corolla 2020" class="inputForms">
+      </div>
+  
 
-    <div class="form-group">
-      <label for="tipoServico">Tipo de serviço:</label>
-      <select id="tipoServico" name="tipoServico">
+
+      <div class="Nome_input">
+        <label for="tipoServico">Tipo de serviço:<span class="obrigatorio">*</span></label>
+        <select id="tipoServico" name="tipoServico" class="SelectForms">
         <option value="revisao">Revisão completa</option>
         <option value="oleo">Troca de óleo</option>
         <option value="freios">Troca de pastilhas de freio</option>
@@ -161,16 +176,22 @@
         <option value="outros">Outros serviços</option>
       </select>
     </div>
+   
 
-    <div class="form-group">
-      <label for="observacoes">Observações:</label>
-      <textarea id="observacoes" name="observacoes" rows="3" placeholder="Escreva observações adicionais"></textarea>
-    </div>
+   
+      <div class="Nome_input">
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes" rows="5" cols="50" placeholder="Escreva observações adicionais" ></textarea>
+      </div>
 
-    <div class="form-group">
-      <label for="filial">Filial (Local):</label>
-      <select id="filial" name="filial">
-        <option value="brasilia">Brasília</option>
+
+</div>
+
+  <!-- Filial -->
+  <div class ="DivFiliais">
+      <label for="filial">Filial (Local):<span class="obrigatorio">*</span></label>
+      <select id="filial" name="filial" class="SelectForms">
+        <option value="brasilia" selected>Brasília</option>
         <option value="goiania">Goiânia</option>
         <option value="sao-paulo">São Paulo</option>
         <option value="santos">Santos</option>
@@ -183,123 +204,85 @@
       </select>
     </div>
 
-    <div class="form-actions">
-      <button type="submit" class="btn-agendar" id="btnAgendar">Agendar</button>
-    </div>
-  </form>
-</div>
-      
-  </form>
-</div>
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-col">
-      <h4>Nome dos integrantes</h4>
-      <p>Curso</p>
-      <p>Disciplina</p>
-      <p>Turma</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Home Page</h4>
-      <p>Sobre nós</p>
-      <p>Por que comprar aqui</p>
-      <p>O que vendemos/serviços</p>
-      <p>Parceiros</p>
-      <p>Marcas</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Central de atendimento</h4>
-      <p>Contato</p>
-      <p>Horário de atendimento</p>
-      <p>Endereço</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Formas de pagamento</h4>
-      <p>Pix</p>
-      <p>Boleto</p>
-      <p>Visa</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Reconhecimento e segurança</h4>
-      <p>Google – safe browsing</p>
-      <p>Site blindado</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>HARD AUTO PEÇAS</p>
-    <div class="social-icons">
-      <span>📘</span>
-      <span>📷</span>
-      <span>▶️</span>
-      <span>🐦</span>
-    </div>
-  </div>
-</footer>
-
-    <!-- HEADER (logo clicável que leva à home) -->
-<header class="site-header">
-  <a href="/" class="site-logo" aria-label="Ir para a página inicial">
-    <img src="/assets/logo.png" alt="HARD AUTO PEÇAS" />
-  </a>
-  <!-- resto do nav... -->
-</header>
-
-<!-- FOOTER (com logo + ícones clicáveis) -->
-<footer class="site-footer">
-  <div class="footer-container">
-    <!-- colunas já existentes... -->
-
-    <!-- Parte inferior com logo e redes sociais -->
-    <div class="footer-bottom">
-      <div class="footer-brand">
-        <a href="/" class="logo-link" aria-label="HARD AUTO PEÇAS — Página inicial">
-          <img src="/assets/logo-footer.png" alt="HARD AUTO PEÇAS" class="logo-footer">
-        </a>
-        <p class="brand-name">HARD AUTO PEÇAS</p>
-      </div>
-
-      <div class="social-icons" aria-label="Redes sociais">
-        <!-- Use aria-label no <a> + target="_blank" + rel para abrir em nova aba com segurança -->
-        <a href="https://www.instagram.com/SEU_PERFIL" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <img src="/assets/icons/instagram.svg" alt="">
-        </a>
-        <a href="https://www.facebook.com/SEU_PERFIL" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <img src="/assets/icons/facebook.svg" alt="">
-        </a>
-        <a href="https://twitter.com/SEU_PERFIL" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-          <img src="/assets/icons/twitter.svg" alt="">
-        </a>
-        <a href="https://www.linkedin.com/in/SEU_PERFIL" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <img src="/assets/icons/linkedin.svg" alt="">
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- coloque no <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- no footer -->
-<div class="social-icons">
-  <a href="https://www.instagram.com/SEU_PERFIL" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-    <i class="fab fa-instagram" aria-hidden="true"></i>
-  </a>
-  <a href="https://www.facebook.com/SEU_PERFIL" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-    <i class="fab fa-facebook-f" aria-hidden="true"></i>
-  </a>
-  <a href="https://twitter.com/SEU_PERFIL" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-    <i class="fab fa-twitter" aria-hidden="true"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/SEU_PERFIL" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-  </a>
-</div>
     
+
+
+
+
+
+    <!-- Botao Agendar -->
+ <div class="BotaoAgendar">
+      <button type="submit" class="btn-agendar" id="btnAgendar">Agendar</button>
+ </div>
+
+     </form>
+      
+
+
+
+
+<!-- FOOTER/RODAPÉ (com logo + ícones clicáveis) -->
+<footer class="site-footer" id="rd">
+  
+  
+  <div class="LinhaDivisao"><hr></div>
+  
+  <div class="rodape">
+    <!-- Logo -->
+    <a class="navbar-brand" href="../home_page/indexH.html"> <!-- Quando clicar na logo: volta para o Home page -->
+      <img src="../home_page/Imagens/logo.png" alt="Logo" width="80" height="50">
+    </a>
+
+
+   <!-- Contatos -->
+    <div class="Contatos">
+      <div class="CentralWhats">
+        <h4>Central de atendimento</h4>
+        <a href="https://www.whatsapp.com/">
+          <i class="bi bi-whatsapp" style="font-size: 20px;color: #45C755;"></i>
+        </a>
+      </div>
+    
+      <p>cel.: (61) 9 9xxx-xxx9<br>
+      tel.: 3003 xx89<br>
+      email:danilo.lisboa@autohard.com.br<br>
+      Seg. a Sex. - 9h às 17h<br>
+      Endereço</p>
+  
+    </div>
+
+
+
+    <!-- Redes sociais -->
+    <div class="RedesS">
+       
+
+      <a href="https://www.instagram.com/" class="redeInsta">
+          <img src="../RedesSociais_Logo/LogoInsta.png" alt="LogoInstagram" width="50" height="30">
+      </a>
+
+      <a href="https://www.linkedin.com/" class="rede">
+          <i class="bi bi-linkedin" style="font-size: 20px;color:#0164CA;"></i>
+      </a>
+
+      <a href="https://www.facebook.com/" class="rede">
+          <i class="bi bi-facebook" style="font-size: 20px;color:#1877F2;"></i>
+      </a>
+
+      <a href="https://x.com/" class="rede">
+          <i class="bi bi-twitter-x" style="font-size: 20px;color: white;"></i>
+      </a>
+ 
+    </div>
+
+    </div>
+
+
+</footer>
+
+ <div class="VoltarTopo">
+  <a href="#Topo" class="voltarTopoo" ><img src="../briefing/imagens/voltar.png" alt="Suporte" width="30" height="30"></a> <!-- ".." para escolher a outra PASTA que quer ir -->
+  </div>
+
 </body>
 </html>
