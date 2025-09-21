@@ -12,8 +12,7 @@ body {
    padding-left:10px;
 }
 
-/* mais especifidade = bootstrap nao bloqueia */
-/* Itens do menu:  */
+
 .navbar-nav .nav-link.active,.nav-link.dropdown-toggle{
     font-size: 20px;
     color: white !important ; /* important: Para superar o bootstrap*/
@@ -21,13 +20,13 @@ body {
 }
 
 
-.navbar-nav .nav-link.active:hover,.nav-link.dropdown-toggle:hover{ /* Quando passar o mouse, ir para verde */
+.navbar-nav .nav-link.active:hover,.nav-link.dropdown-toggle:hover{ 
    color: rgb(158, 224, 158) !important; /* important: Para superar o bootstrap*/
 }
 
 
 .navbar-nav {
-  gap: 50px;  /* Espaço entre cada item do menu */ 
+  gap: 50px;  
 }
 
 .suportIcon{

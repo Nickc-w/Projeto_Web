@@ -1,9 +1,6 @@
 body {
    text-align: center;
    background-image: url('../manutencao_page/Imagens/fundoM1.jpeg');
-   
-   
-   /* img cobre a tela toda, fixada no fundo, centro, sem repetição  */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,8 +18,7 @@ body {
    padding-left:10px;
 }
 
-/* mais especifidade = bootstrap nao bloqueia */
-/* Itens do menu:  */
+
 .navbar-nav .nav-link.active,.nav-link.dropdown-toggle{
     font-size: 20px;
     color: white !important ; /* important: Para superar o bootstrap*/
@@ -30,13 +26,13 @@ body {
 }
 
 
-.navbar-nav .nav-link.active:hover,.nav-link.dropdown-toggle:hover{ /* Quando passar o mouse, ir para verde */
+.navbar-nav .nav-link.active:hover,.nav-link.dropdown-toggle:hover{ 
    color: rgb(158, 224, 158) !important; /* important: Para superar o bootstrap*/
 }
 
 
 .navbar-nav {
-  gap: 50px;  /* Espaço entre cada item do menu */ 
+  gap: 50px;  
 }
 
 
@@ -63,7 +59,7 @@ body {
 }
 
 .DivFormsManut:hover, .DivFiliais:hover,.car-info-container:hover{
-    transform: scale(1.05); /* aumenta o container quando passa o mouse */
+    transform: scale(1.05); 
 }
 
 .DivFiliais{
@@ -115,7 +111,7 @@ textarea::placeholder{
    text-align: center;
 }
 
-/* Para deixar cada label-input embaixo do outro no centro */
+
 .Nome_input,.DivFiliais{
   display: flex;
   flex-direction: column;
@@ -134,7 +130,7 @@ footer{
 .rodape{
    margin-left: 200px;
    gap: 130px;
-   display: flex; /* Alinha horizontalmente */
+   display: flex;
 }
 
 .Contatos{
