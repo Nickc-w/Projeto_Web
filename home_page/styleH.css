@@ -1,35 +1,37 @@
+
+/* PARA O MENU   */ 
 body {
-    padding-top: 80px; /* por causa do menu grudado no topo (ele esconde o conteudo atras dele),
+    padding-top: 6.25rem; /* por causa do menu grudado no topo (ele esconde o conteudo atras dele),
                          então precisa empurrar o conteudo para baixo dele! Quanto maior o espaço, mas para baixo o conteudo vai */
 }
 
-/* PARA O MENU  */
-
 
 .navbar-brand{
-   padding-top: 10px;
-   padding-right: 230px;
-   padding-left:10px;
-}
+   padding-top:  0.625rem;
+   padding-right: 14.375rem;;
+   padding-left:0.625rem;
+} 
+  
 
 
-.navbar-nav .nav-link.active,.nav-link.dropdown-toggle{
-    font-size: 20px;
-    color: white !important ; /* important: Para superar o bootstrap*/
+.navbar-nav .nav-link.active,.navbar .nav-link.dropdown-toggle{
+    font-size: 1.25rem;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 
 
 .navbar-nav .nav-link.active:hover,.nav-link.dropdown-toggle:hover{ 
-   color: rgb(158, 224, 158) !important; /* important: Para superar o bootstrap*/
+   color: rgb(158, 224, 158);
 }
 
 
 .navbar-nav {
-  gap: 50px;  
+  gap: 3.125rem;  
 }
 
+
 .suportIcon{
-   padding-right: 10px;
+   padding-right: 0.625rem;
 }
 

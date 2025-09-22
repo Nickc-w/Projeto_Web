@@ -8,23 +8,25 @@ body {
                          então precisa empurrar o conteudo para baixo dele! Quanto maior o espaço, mas para baixo o conteudo vai */
 }
 
+
 .navbar-brand{
-   padding-top: 10px;
-   padding-right: 230px;
-   padding-left:10px;
-}
+   padding-top:  0.625rem;
+   padding-right: 14.375rem;;
+   padding-left:0.625rem;
+} 
+  
 
 /* mais especifidade = bootstrap nao bloqueia */
 /* Itens do menu:  */
-.navbar-nav .nav-link.active,.nav-link.dropdown-toggle{
+.navbar-nav .nav-link.active,.navbar .nav-link.dropdown-toggle{
     font-size: 20px;
-    color: white !important ; /* important: Para superar o bootstrap*/
+    color: white; 
     font-family: 'Times New Roman', Times, serif;
 }
 
 
 .navbar-nav .nav-link.active:hover,.nav-link.dropdown-toggle:hover{ /* Quando passar o mouse, ir para verde */
-   color: rgb(158, 224, 158) !important; /* important: Para superar o bootstrap*/
+   color: rgb(158, 224, 158);
 }
 
 
