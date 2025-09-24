@@ -152,5 +152,134 @@ footer {
 
 
 
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*Coluna*/
+  gap: 20px;
+}
+
+.produto {
+
+  width: 100%;             /* ocupa o espaço do grid */
+  max-width: 350px;        /* limite para não ficar gigante */
+  margin: auto;
+  min-height: 480px;       /* altura mínima fixa */
+  display: flex;
+  flex-direction: column;  /* organiza conteúdo em colunas */
+  justify-content: space-between; /* distribui conteúdo */
+
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.produto img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 200px;           /* fixa a altura */
+  object-fit: contain;
+}
+
+.produto h2 {
+  font-size: 16px;
+  margin: 10px 0;
+  height: 50px; 
+  overflow: hidden;
+}
+
+.preco-antigo {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+
+.preco {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pix {
+  color: green;
+  font-size: 14px;
+}
+
+.parcelado {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #027d27;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+button:hover {
+  background: #03a232;
+}
+
+/* PROMOÇÃo*/
+.hero-catalogo {
+  background: linear-gradient(135deg, #014f19, #00c851);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 20px auto 40px auto;
+  max-width: 1000px;
+}
+
+.hero-catalogo h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-catalogo p {
+  font-size: 1.2rem;
+}
+
+
+/* Ajusta largura dos cards */
+.produto {
+  width: 400px;
+  margin: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito no hover */
+.produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Botão voltar ao topo */
+.btn-topo {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #027d27;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+.btn-topo:hover {
+  background: #03a232;
+}
+
 
 

@@ -1,6 +1,8 @@
 
+
 /* PARA O MENU   */ 
 body {
+    background-color: rgb(255, 245, 245);
     padding-top: 6.25rem; 
 }
 
@@ -33,6 +35,16 @@ body {
 .suportIcon{
    padding-right: 0.625rem;
 }
+
+
+/* FONTE */
+
+@font-face {
+  font-family: 'Nulshock'; 
+  src: url('../fontesCSS/Nulshock Bd.otf') format('opentype'); 
+
+} 
+
 
 
 /* RODAPE */
@@ -145,4 +157,52 @@ footer {
 #parceiros, #nossas-marcas,#Topo {
     scroll-margin-top: 100px; 
 }
+
+
+/*----------------------------------------*/
+/* TABELA DE REVIEWS */
+
+/*
+
+
+/* Estilo da tabela */
+.table-container {
+  background: #000;
+  border: 2px solid #198754;
+}
+
+.review-table th {
+  background-color: #198754;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.review-table td, .review-table th {
+  border: 1px solid #333;
+  padding: 12px;
+}
+
+.review-table tr:hover {
+  background-color: rgba(255, 215, 0, 0.2); /* dourado transparente */
+  transition: 0.3s;
+}
+
+/* Estrelas douradas */
+.stars {
+  font-size: 20px;
+  font-weight: bold;
+  color: gold !important;
+  letter-spacing: 3px;
+  cursor: default;
+  text-shadow: 0 0 6px rgba(255, 215, 0, 0.7);
+}
+
+.stars:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 10px gold, 0 0 20px #198754;
+  transition: 0.2s;
+}
+
+
+
 
