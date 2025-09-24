@@ -1,5 +1,7 @@
 
 /* PARA O MENU   */ 
+
+
 body {
     padding-top: 5rem; /* por causa do menu grudado no topo (ele esconde o conteudo atras dele),
                          então precisa empurrar o conteudo para baixo dele! Quanto maior o espaço, mas para baixo o conteudo vai */
@@ -40,6 +42,16 @@ body {
 /* RESTO DA PÁGINA */
 
 
+/* FONTE */
+
+@font-face {
+  font-family: 'Nulshock'; 
+  src: url('../fontesCSS/Nulshock Bd.otf') format('opentype'); 
+
+} 
+
+
+
  * { margin:0; padding:0; box-sizing:border-box; }
         body { font-family: Arial, Helvetica, sans-serif; background:#fff; color:#111; }
 
@@ -72,7 +84,9 @@ body {
     color: white; 
 }
         .banner h1 {
-            font-size: 28px;
+        
+            font-family: 'Nulshock';
+            font-size: 40px;
             margin-bottom: 18px;
             font-weight: 800;
             color: white;
@@ -119,6 +133,7 @@ body {
         }
 
         .section-title {
+            font-family: 'Times New Roman', Times, serif;
             text-align: center;
             margin-bottom: 20px;
             font-weight: bold;
@@ -267,6 +282,7 @@ footer {
 .brand-social a{
    text-decoration: none;
    color: black;
+   font-family: 'Times New Roman', Times, serif;
 
 }
 
