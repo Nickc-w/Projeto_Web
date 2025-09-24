@@ -3,8 +3,7 @@
 
 
 body {
-    padding-top: 5rem; /* por causa do menu grudado no topo (ele esconde o conteudo atras dele),
-                         então precisa empurrar o conteudo para baixo dele! Quanto maior o espaço, mas para baixo o conteudo vai */
+    padding-top: 5rem; 
 }
 
 
@@ -49,6 +48,7 @@ body {
   src: url('../fontesCSS/Nulshock Bd.otf') format('opentype'); 
 
 } 
+
 
 
 
@@ -143,9 +143,9 @@ body {
         .grid-container, 
          .grid-container.parceiros-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, 150px); /* largura fixa para cada coluna */
+            grid-template-columns: repeat(auto-fit, 150px); 
             gap: 40px;
-            justify-content: center; /* centraliza a grid */
+            justify-content: center; 
             align-items: center;
 }
 
@@ -224,7 +224,7 @@ body {
 
 footer {
     display: flex;
-    justify-content: space-between; /* Mantém as colunas espaçadas */
+    justify-content: space-between; 
     flex-wrap: wrap;
     background: #f2f2f2;
     padding: 40px 20px;
@@ -238,10 +238,10 @@ footer {
     gap: 10px;
     min-width: 160px;
     margin-bottom: 12px;
-    text-align: left; /* Alinha o texto e os itens à esquerda dentro de cada coluna */
+    text-align: left; 
 }
 
-/* primeira coluna (nomes) pode ter largura maior */
+
 .footer-column:first-child {
     min-width: 300px;
 }

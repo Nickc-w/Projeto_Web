@@ -1,8 +1,7 @@
 
 /* PARA O MENU   */ 
 body {
-    padding-top: 5.1rem; /* por causa do menu grudado no topo (ele esconde o conteudo atras dele),
-                         então precisa empurrar o conteudo para baixo dele! Quanto maior o espaço, mas para baixo o conteudo vai */
+    padding-top: 5.1rem; 
     background-color: #0b7c47;
     
 }
@@ -44,7 +43,7 @@ body {
 /* PARA O RESTO DA PAGINA */
 
 .container{ /* containers */
-    background-color: rgb(160, 194, 163);
+    background-color: rgba(160, 194, 163,0.8);
     width: 50%; 
     height: 15.625rem;
     margin: 1.25rem; 
@@ -58,7 +57,7 @@ body {
 }
 
 .container:hover,.Maiorcontainer:hover {
-    transform: scale(1.05); /* aumenta o container quando passa o mouse */
+    transform: scale(1.05); 
 }
 
 
@@ -94,7 +93,7 @@ body {
 }
 
 #Topo {
-  scroll-margin-top: 5rem;  /* Para rolar ate o inicio 100% , menu fixado atrapalha */
+  scroll-margin-top: 5rem;  
 }
       
 
@@ -115,7 +114,7 @@ h2{
 
 footer {
     display: flex;
-    justify-content: space-between; /* Mantém as colunas espaçadas */
+    justify-content: space-between; 
     flex-wrap: wrap;
     background: #f2f2f2;
     padding: 40px 20px;
@@ -129,10 +128,9 @@ footer {
     gap: 10px;
     min-width: 160px;
     margin-bottom: 12px;
-    text-align: left; /* Alinha o texto e os itens à esquerda dentro de cada coluna */
+    text-align: left; 
 }
 
-/* primeira coluna (nomes) pode ter largura maior */
 .footer-column:first-child {
     min-width: 300px;
 }

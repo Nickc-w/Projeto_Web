@@ -149,7 +149,7 @@ textarea::placeholder{
 
 footer {
     display: flex;
-    justify-content: space-between; /* Mantém as colunas espaçadas */
+    justify-content: space-between; 
     flex-wrap: wrap;
     background: #f2f2f2;
     padding: 40px 20px;
@@ -163,10 +163,10 @@ footer {
     gap: 10px;
     min-width: 160px;
     margin-bottom: 12px;
-    text-align: left; /* Alinha o texto e os itens à esquerda dentro de cada coluna */
+    text-align: left; 
 }
 
-/* primeira coluna (nomes) pode ter largura maior */
+
 .footer-column:first-child {
     min-width: 300px;
 }
