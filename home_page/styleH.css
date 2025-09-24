@@ -204,6 +204,9 @@ body {
 
 
 
+
+/* RODAPE  */
+
 footer {
     display: flex;
     justify-content: space-between; /* Mantém as colunas espaçadas */
